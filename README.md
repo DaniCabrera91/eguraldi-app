@@ -10,6 +10,10 @@ Esta aplicación permite buscar el estado del tiempo de una ciudad usando la API
 
 ---
 
+## Demo
+
+[Prueba la app](https://eguraldi-app.vercel.app)
+
 ## 🖼️ Vista previa
 
 ![Vista previa de la app](./assets/app-screen.png)
