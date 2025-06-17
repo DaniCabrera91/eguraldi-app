@@ -10,7 +10,7 @@ const WeatherSearch = () => {
     if (!city) return setError("Por favor ingresa una ciudad");
     try {
       const response = await fetch(
-        `http://localhost:3000/weather?city=${city}`
+        `https://eguraldi-app.onrender.com/weather?city=${city}`
       );
       if (!response.ok) throw new Error("Ciudad no encontrada");
       const result = await response.json();
@@ -25,7 +25,7 @@ const WeatherSearch = () => {
   const handleMapClick = async (lat, lon) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/weather/coords?lat=${lat}&lon=${lon}`
+        `https://eguraldi-app.onrender.com/weather/coords?lat=${lat}&lon=${lon}`
       );
       if (!response.ok)
         throw new Error("Error al obtener clima por coordenadas");
