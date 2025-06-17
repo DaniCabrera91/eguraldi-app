@@ -1,0 +1,17 @@
+import WeatherSearch from "./components/WeatherSearch";
+import "leaflet/dist/leaflet.css";
+
+import "./App.css";
+
+function App() {
+  return (
+    <>
+      <div>
+        <h1>Eguraldi App</h1>
+        <WeatherSearch />
+      </div>
+    </>
+  );
+}
+
+export default App;
