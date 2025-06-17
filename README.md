@@ -8,8 +8,6 @@ Aplicación web para consultar el clima de cualquier ciudad y mostrar la informa
 
 Esta aplicación permite buscar el estado del tiempo de una ciudad usando la API de OpenWeatherMap y mostrar la información en un mapa con Leaflet. También permite hacer clic en el mapa para obtener el clima de la ubicación seleccionada.
 
-Cuenta con backend en Node.js con Express, que consulta la API externa y guarda los resultados en una base de datos MySQL. El frontend está hecho con React y React-Leaflet.
-
 ---
 
 ## 🖼️ Vista previa
@@ -23,16 +21,13 @@ Cuenta con backend en Node.js con Express, que consulta la API externa y guarda 
 - Visualizar ubicación en un mapa con marcador personalizado.
 - Actualizar el mapa al buscar una nueva ciudad.
 - Hacer clic en el mapa para obtener el clima en esa ubicación.
-- Guardar cada consulta en una base de datos MySQL.
-- Diseño minimalista con modo oscuro opcional.
 
 ---
 
 ## Tecnologías usadas
 
-- Backend: Node.js, Express, Axios, MySQL2
+- Backend: Node.js, Express, Axios
 - Frontend: React, React-Leaflet, Leaflet
-- Base de datos: MySQL
 - Otras: dotenv para variables de entorno, cors
 
 ---
@@ -51,10 +46,6 @@ cd weather-app
 ```bash
 PORT=3100
 OPENWATHER_KEY=tu_api_key_openweather
-DB_HOST=localhost
-DB_USER=tu_usuario_mysql
-DB_PASSWORD=tu_contraseña_mysql
-DB_NAME=nombre_base_datos
 ```
 
 3. Instalar dependencias en backend y frontend:
