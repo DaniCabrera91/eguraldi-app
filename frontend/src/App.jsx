@@ -1,6 +1,7 @@
 import WeatherSearch from "./components/WeatherSearch";
-import "leaflet/dist/leaflet.css";
+import TheFooter from "./components/TheFooter";
 
+import "leaflet/dist/leaflet.css";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div>
         <h1>Eguraldi App</h1>
         <WeatherSearch />
+        <TheFooter />
       </div>
     </>
   );
