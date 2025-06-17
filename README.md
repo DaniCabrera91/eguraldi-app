@@ -14,7 +14,7 @@ Cuenta con backend en Node.js con Express, que consulta la API externa y guarda 
 
 ## 🖼️ Vista previa
 
-![Vista previa de la app](./assets/screenshot.png)
+![Vista previa de la app](./assets/app-screen.png)
 
 ## Funcionalidades
 
