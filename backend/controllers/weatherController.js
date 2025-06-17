@@ -1,5 +1,4 @@
 const { default: axios } = require("axios");
-const db = require("../db/connection");
 
 const kelvinToCelsius = (k) => (k - 273.15).toFixed(1);
 
@@ -7,11 +6,6 @@ const fetchWeather = async (url) => {
   const { data } = await axios.get(url);
   const { name, coord, main, weather } = data;
   const tempCelsius = kelvinToCelsius(main.temp);
-
-  await db.execute(
-    `INSERT INTO weather_data (city, lat, lon, temperature, weather) VALUES (?, ?, ?, ?, ?)`,
-    [name, coord.lat, coord.lon, tempCelsius, weather[0].main]
-  );
 
   return {
     city: name,
